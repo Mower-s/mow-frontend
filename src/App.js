@@ -1,10 +1,11 @@
 import Dashboard from './pages/dashboard';
-import './styles/dashboard.css';
+import Mowe from './pages/mowe';
 
 function App() {
   return (
     <div className="App">
-      <Dashboard/>
+      {/* <Dashboard/> */}
+      <Mowe/>
     </div>
   );
 }
