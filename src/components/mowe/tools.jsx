@@ -15,14 +15,37 @@ const Tools = () => {
       })
   )
 
+  function objectAddedListener(ev) {
+    let target = ev.target;
+    console.log('left', target.left, 'top', target.top, 'width', target.width, 'height', target.height);
+  }
+
+  function objectMovedListener(ev) {
+    let target = ev.target;
+    console.log('left', target.left, 'top', target.top, 'width', target.width * target.scaleX, 'height', target.height * target.scaleY);
+  }
+
+  function serializeCanvas(c) {
+    // var canvasJson = JSON.stringify(c);
+    var json = c.toJSON();
+    console.log(json.objects[0]);
+    // console.log(canvasJson);
+  }
+  
   const addRect = canvi => {
       const rect = new fabric.Rect({
         height: 280,
         width: 200,
-        fill: 'yellow'
+        top: 50,
+        left: 50,
+        fill: 'yellow',
+        id: 123
       });
+      canvi.on('object:added', objectAddedListener);
+      canvi.on('object:modified', objectMovedListener);
       canvi.add(rect);
       canvi.renderAll();
+      serializeCanvas(canvas);
   }
     return (
         <div>

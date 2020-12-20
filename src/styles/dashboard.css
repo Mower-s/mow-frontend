@@ -96,9 +96,10 @@ cursor: pointer;
 }
 .resolution{
     position: relative;
-width: 68px;
+width: 100px;
 height: 14px;
-right: 30%;
+right: 0%;
+left: 30%;
 top: 40%;
 /* Labels */
 font-family: Rubik;
@@ -111,7 +112,7 @@ color: #E4E4EC;
 }
 .resolution-box-title{
     position: relative;
-width: 106px;
+width: 130px;
 height: 14px;
 left: 20%;
 top: 45%;

@@ -15,8 +15,8 @@ function ResolutionBox() {
             <rect x={4} y={55} width={10} height={10} fill="#28282D" />
             <rect x={106} y={55} width={10} height={10} fill="#28282D" />
           </svg>
-          <span className="resolution">1920 x 1080</span>
-          <span className="resolution-box-title">For Cinematic reels</span>
+          <h1 className="resolution">1920 x 1080</h1>
+          <h1 className="resolution-box-title">For Cinematic reels</h1>
         </div>
         <div className="resolution-box" style={{left: '35%'}}>
           <svg id="resolution-box-icon" style={{left: '30%'}} width={89} height={80} viewBox="0 0 89 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,8 +25,8 @@ function ResolutionBox() {
             <rect x={-1} y={1} width={6} height={10} rx={1} transform="matrix(-1 0 0 1 46 65)" fill="#66676C" stroke="#66676C" strokeWidth={2} />
             <rect x={-1} y={1} width={20} height={2} rx={1} transform="matrix(-1 0 0 1 53 76)" fill="#66676C" stroke="#66676C" strokeWidth={2} />
           </svg>            
-          <span className="resolution" style={{right: '15%'}}>1600 x 1200</span>
-          {/* <span class="resolution-box-title">For Desktop</span> */}
+          <h1 className="resolution" >1600 x 1200</h1>
+          {/* <h1 class="resolution-box-title">For Desktop</h1> */}
         </div>
         <div className="resolution-box" style={{left: '55%'}} />
         <div className="resolution-box" style={{left: '75%'}} />
