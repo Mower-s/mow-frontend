@@ -1,0 +1,147 @@
+nav{
+    position: absolute;
+width: 98%;
+height: 8%;
+left: 1%;
+top: 2%;
+background: #201F24;
+border-radius: 8px;
+}
+.title{
+    position: absolute;
+width: 81px;
+height: 19px;
+left: 45%;
+top: 40%;
+/* Base */
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 19px;
+/* identical to box height */
+color: #E4E4EC;
+cursor: pointer;
+}
+.user-icon{
+    position: absolute;
+width: 46px;
+height: 46px;
+left: 80%;
+top: 20%;
+background: #ECD48B;
+border-radius: 6px;
+cursor: pointer;
+}
+.icon-title{
+    position: absolute;
+width: 21px;
+height: 19px;
+left: 20%;
+top: 30%;
+/* Base */
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+/* Darkest Gray */
+color: #201F24;
+}
+.user-title{
+    position: absolute;
+width: 150px;
+height: 19px;
+left: 85%;
+top: 40%;
+/* Base */
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+color: #E4E4EC;
+cursor: pointer;
+}
+.dashboard-title{
+    position: absolute;
+width: 30%;
+height: 32px;
+left: 40%;
+top: 20%;
+/* H2 */
+font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 32px;
+/* identical to box height */
+color: #E4E4EC;
+}
+.resolution-box{
+    position: absolute;
+width: 204px;
+height: 204px;
+top: 30%;
+background: #201F24;
+border-radius: 8px;
+cursor: pointer;
+}
+#resolution-box-icon{
+    position: relative;
+    top:20%;
+    left:20%;
+}
+.resolution{
+    position: relative;
+width: 68px;
+height: 14px;
+right: 30%;
+top: 40%;
+/* Labels */
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+/* White Gray */
+color: #E4E4EC;
+}
+.resolution-box-title{
+    position: relative;
+width: 106px;
+height: 14px;
+left: 20%;
+top: 45%;
+/* Labels */
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+/* Moon Gray */
+color: #66676C;
+}
+.recent{
+position: absolute;
+top:55%;
+left:5%;
+}
+.recent-box{
+    position: absolute;
+width: 300px;
+height: 300px;
+top: 65%;
+background: #201F24;
+border-radius: 8px;
+cursor: pointer;
+}
+.recent-img{
+    position: absolute;
+width: 300px;
+height: 211px;
+background: #66676C;
+border-radius: 8px 8px 0px 0px;
+}
