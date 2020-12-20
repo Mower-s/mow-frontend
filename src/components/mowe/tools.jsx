@@ -1,7 +1,35 @@
-function Tools() {
+import React, { useState, useEffect } from 'react';
+import { fabric } from 'fabric';
+const Tools = () => {
+  const [canvas, setCanvas] = useState('');  
+  
+  useEffect(() => {
+      setCanvas(initCanvas());
+    }, []);  
+    
+  const initCanvas = () => (
+      new fabric.Canvas('canvas', {
+        height: 500,
+        width: 800,
+        backgroundColor: 'white'
+      })
+  )
+
+  const addRect = canvi => {
+      const rect = new fabric.Rect({
+        height: 280,
+        width: 200,
+        fill: 'yellow'
+      });
+      canvi.add(rect);
+      canvi.renderAll();
+  }
     return (
         <div>
         <div className="logo" />
+        <div className="canvas">
+                <canvas id="canvas" />
+        </div>
         <div className="tools">
           <svg id="arrow" width={51} height={50} viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="3.05176e-05" width={51} height={50} fill="#201F24" />
@@ -10,7 +38,7 @@ function Tools() {
           <svg style={{position: 'absolute', top: '25%'}} width={80} height={3} viewBox="0 0 80 3" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line y1="1.50003" x2={80} y2="1.50003" stroke="#171719" strokeWidth={3} />
           </svg> 
-          <svg id="shape" width={51} height={51} viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg onClick={() => addRect(canvas)} id="shape" width={51} height={51} viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="3.05176e-05" width={51} height={51} fill="#201F24" />
             <rect x={14} y={13} width={25} height={25} rx={4} stroke="#66676C" strokeWidth={4} />
           </svg>  
@@ -32,4 +60,4 @@ function Tools() {
     );
   }
 
-  export default Tools;
+export default Tools;

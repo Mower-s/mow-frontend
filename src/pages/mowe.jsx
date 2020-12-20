@@ -1,23 +1,24 @@
-import UserNav from '../components/userNav';
-import Tools from '../components/tools';
-import Timeline from '../components/timeline';
-import SpeedGraph from '../components/speedGraph';
-import LayerBox from '../components/layerBox';
-import Properties from '../components/properties';
+import UserNav from '../components/mowe/userNav';
+import Tools from '../components/mowe/tools';
+import Timeline from '../components/mowe/timeline';
+import SpeedGraph from '../components/mowe/speedGraph';
+import LayerBox from '../components/mowe/layerBox';
+import Properties from '../components/mowe/properties';
+
 import '../styles/mowe.css';
-function Mowe() {
+const Mowe = () => {
+    
     return (
         <div>
             <h1 className="title">File Name*</h1>
             <UserNav />
-            <canvas id="canvas" />
-            <Tools/>
+            <Tools  />
             <Properties />
             <SpeedGraph/>
             <Timeline/>
             <LayerBox/>
         </div>
     );
-  }
-
-  export default Mowe;
+  
+}
+export default Mowe;

@@ -1,6 +1,6 @@
-import DashboardNav from '../components/dashboardNav';
-import ResolutionBox from '../components/resolutionBox';
-import RecentBox from '../components/recentBox';
+import DashboardNav from '../components/dashboard/dashboardNav';
+import ResolutionBox from '../components/dashboard/resolutionBox';
+import RecentBox from '../components/dashboard/recentBox';
 import '../styles/dashboard.css';
 function Dashboard() {
     return (

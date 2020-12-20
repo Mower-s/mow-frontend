@@ -1,6 +1,6 @@
 import React from "react";
 import ExportModal from './exportModal';
-import '../styles/exportModal.css';
+import '../../styles/exportModal.css';
 class UserNav extends React.Component {
   state = {
     show: false
