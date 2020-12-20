@@ -1,0 +1,99 @@
+.export-container{
+    position: absolute;
+width: 312px;
+height: 270px;
+/* left: 560px; */
+top: 348px;
+right: 200%;
+z-index: 200;
+/* Charcoal Gray */
+background: #201F24;
+box-shadow: 0px 4px 18px -2px rgba(21, 21, 21, 0.83);
+border-radius: 12px;
+text-align: center;
+}
+.export-title{
+    position: absolute;
+width: 150px;
+height: 19px;
+top: 5%;
+left: 25%;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #E4E4EC;
+}
+.input-title{
+position: absolute;
+width: 35px;
+height: 14px;
+left: 10%;
+top: 20%;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+color: #66676C;
+}
+.export-name{
+    position: absolute;
+width: 250px;
+height: 20px;
+left: 10%;
+top: 30%;
+/* Charcoal Gray */
+background: #201F24;
+box-shadow: 0px 4px 18px -2px rgba(21, 21, 21, 0.83);
+border: 1px solid rgba(102, 103, 108, 0.12);
+color: aliceblue;
+border-radius: 10px;
+text-align: center; 
+}
+input[type="text"]::placeholder {  
+    text-align: center; 
+} 
+.quality-box{
+    position: absolute;
+width: 57px;
+height: 30px;
+left: 10%;
+top: 60%;
+background: #9C14F1;
+border: 1px solid #9C14F1;
+box-sizing: border-box;
+border-radius: 4px;
+text-align: center;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+color: #E4E4EC;
+line-height: 24px;
+cursor: pointer;
+}
+.cancel-button{
+    position: absolute;
+    width: 52px;
+    height: 19px;
+    left: 40%;
+    top: 85%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #66676C;
+    cursor: pointer;
+}
+.export-button{
+    position: absolute;
+width: 52px;
+height: 19px;
+left: 70%;
+top: 85%;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #9C14F1;
+cursor: pointer;
+}
