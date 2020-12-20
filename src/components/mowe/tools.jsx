@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useGlobal, useEffect } from 'reactn';
 import { fabric } from 'fabric';
 const Tools = () => {
-  const [canvas, setCanvas] = useState('');  
+  const [canvas, setCanvas] = useGlobal('');  
   
   useEffect(() => {
       setCanvas(initCanvas());
@@ -36,8 +37,8 @@ const Tools = () => {
       const rect = new fabric.Rect({
         height: 280,
         width: 200,
-        top: 50,
-        left: 50,
+        top: 100,
+        left: 300,
         fill: 'yellow',
         id: 123
       });
